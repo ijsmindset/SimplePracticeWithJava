@@ -1,7 +1,7 @@
 public class Suma{
   public static void main(String args[]){
 
-   int num_uno   = 5;
+   int num_uno   = 7;
    int num_dos   = 2;
    int resultado = 0;
 
