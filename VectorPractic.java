@@ -17,7 +17,7 @@ public class VectorPractic{
     numeros[i] = in.nextInt();
   }
     for(int i = 0; i < numeros.length; i++){
-     System.out.print("["  numeros[i] + "]");
+     System.out.print("[" + numeros[i] + "]");
       
   }
      System.out.println("");
