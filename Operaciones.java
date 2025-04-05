@@ -5,6 +5,6 @@ public class Operaciones{
    int resultado  = 0;
 
    resultado = (numero_uno + numero_dos)/ 2;
-   System.out.println("el resultado es: " + resultado + "eres un pro bro"); 
+   System.out.println("el resultado es: " + resultado + "eres un pro bro like a this"); 
  }
 }
