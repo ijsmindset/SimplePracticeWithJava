@@ -22,7 +22,7 @@ public class SwitchCase{
              System.out.println("El resultado de la division es: " + resultado);
              break;
 
-     default: System.out.println("Error, la opcion  existe") ;
+     default: System.out.println("Error, la opcion bo existe") ;
               break;
 
 
