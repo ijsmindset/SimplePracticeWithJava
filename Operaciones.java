@@ -1,6 +1,6 @@
 public class Operaciones{
   public static void main(String args[]){
-   int numero_uno = 4;
+   int numero_uno = 3;
    int numero_dos = 4;
    int resultado  = 0;
 
