@@ -2,7 +2,7 @@ DECLARE
 vv_mi_cadena VARCHAR2(20 CHAR);
 
 BEGIN
-	vv_mi_cadena := NVL(vv_mi_cadena, 'cadena vacia');
+	vv_mi_cadena := NVL(vv_mi_cadena, 'cadena vacia') := 'un valor' ;
 	DBMS_OUTPUT.PUT_LINE('El valor de la variable vv_mi_cadena es  '  ||  VV_MI_CADENA);
 END;
 
