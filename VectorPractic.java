@@ -23,7 +23,7 @@ public class VectorPractic{
      System.out.println("");
 
       System.out.println("**********************");
-      System.out.println("* vectores Dinamicos *");
+      System.out.println("* vectores Dinamico *");
       System.out.println("**********************");
 /*version de prueba*/
  }
