@@ -1,7 +1,7 @@
 public class SwitchCase{ 
    public static void main(String args[]){
   
-  int num_uno = 5, num_dos = 3, resultado = 0;
+  int num_uno = 4, num_dos = 3, resultado = 0;
   int parametro = 4;
   
   switch(parametro){
