@@ -2,8 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Random;
-/*proximos proyectos*/
-/*proyecto de verano*/
+
 public class SnakeGame extends JFrame {
 
     private static final int TILE_SIZE = 25;
