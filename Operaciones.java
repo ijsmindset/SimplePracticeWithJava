@@ -5,6 +5,6 @@ public class Operaciones{
    int resultado  = 0;
 
    resultado = (numero_uno + numero_dos)/ 2;
-   System.out.println("el resultado es: " + resultado + " esta es la prueba de asignar directamente los numeros sin   "); 
+   System.out.println("el resultado es: " + resultado + " esta es la prueba de asignar directamente los numeros   "); 
  }
 }
