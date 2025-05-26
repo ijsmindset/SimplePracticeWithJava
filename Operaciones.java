@@ -8,7 +8,6 @@ public class Operaciones{
    System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
      System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
      System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
-     System.out.println("el resultado es: " + resultado + " esta es la pruba "); 
-     System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
+    
  }
 }
