@@ -6,8 +6,7 @@ public class Operaciones{
 
    resultado = (numero_uno + numero_dos)/ 2;
    System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
-     System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
-     System.out.println("el resultado es: " + resultado + " esta es la prueba "); 
+  
     
  }
 }
