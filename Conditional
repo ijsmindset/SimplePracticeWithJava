@@ -1,0 +1,11 @@
+public class Conditional{
+    public static void main(String args[]){
+        int matematicas = 0;
+        int biologia = 0;
+        int quimica = 0;
+        int promedio = 0;
+
+
+    }
+
+}/* falta programar la condicional con la formula de la suma y sascar la media de nota y la salida segun el booleano */
