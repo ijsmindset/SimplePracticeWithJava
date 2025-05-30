@@ -1,11 +1,25 @@
 public class Conditional{
     public static void main(String args[]){
-        int matematicas = 0;
-        int biologia = 0;
-        int quimica = 0;
+        int bbdd = 6;
+        int sistemasInformaticos = 7;
+        int ingles = 7;
         int promedio = 0;
 
+        promedio = (matematicas + biologia + quimica) / 3;
 
+        if (promedio >= 6){
+            System.out.println("El alumno aprobo" + promedio);
+        }    else { 
+             System.out.println("El alumno suspendio" + promedio);
+        }
     }
+}
+/* esta es la estructura de una condicional en java a falta de invocar la biblioteca tipo Scanner para 
+dar entrada de teclado y modificar las notas en cada variable.
 
-}/* falta programar la condicional con la formula de la suma y sascar la media de nota y la salida segun el booleano */
+en esta condicional dejamos preestablecido la nota de cada asignatura por ahora, y sacamos la media de
+las tres asignaturas y la alojamos en la variable promedio, tenemos que recordar el orden de prioridad 
+de los simbolos de suma resta etc... asi como los parentesis. en la variable promedio alojamos  el resultado de sacar
+la media de las asignaturas (sumamo las tres y el resultado se divide por el numero de asignaturas)
+ mas abajo usamos la condicional 'if' si esta aprobado (true) imprimira en pantalla el texto de aprobado mas la nota
+por el contrario si es no(false) 'else' imprimiremos en pantalla la salida con el texto de suspenso mas la nota*/
