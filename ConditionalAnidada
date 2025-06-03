@@ -8,15 +8,19 @@ public static void main(String args[]){
 
     if(operacion == 1){
         resultado = numUno + numDos;
+
         System.out.println("El resultado de la suma es: " + resultado);
         } else if(operacion == 2){
         resultado = numUno - numDos;
+
         System.out.println("El resultado de la resta es: " + resultado);
         } else if(operacion == 3){
         resultado = numUno / numDos;
+
         System.out.println("El resultado de la division es: " + resultado);
         } else if(operacion == 4){
         resultado = numUno * numDos;
+
         System.out.println("El resultado de la multiplicacion es: " + resultado);
         } else {
             System.out.println("¿Enserio? ¿no sabes leer animal de bellota?");
