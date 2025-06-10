@@ -10,10 +10,10 @@ public class KeyboardInputUno{
        System.out.println("Cual es tu nombre?");
        nombre = in.nextLine();
 
-       System.out.println("Dame el primer valor para tu suma:");
+       System.out.println("Dame el primer valor para tu suma");
        numUno = in.nextInt();
 
-       System.out.println("Dame el segundo valor para tu suma:");
+       System.out.println("Dame el segundo valor para tu suma");
        numDos = in.nextInt();
 
        resultado = numUno + numDos;
