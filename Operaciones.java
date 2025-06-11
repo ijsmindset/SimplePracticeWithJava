@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Operaciones{
   public static void main(String args[]){
    int numero_uno = 8;
@@ -10,3 +12,4 @@ public class Operaciones{
     
  }
 }
+/* mejoraremos este ejercicio en el futuro con Scanner para poder hacer las operaciones que cada uno crea conveniente */
