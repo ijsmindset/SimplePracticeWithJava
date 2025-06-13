@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Calculadora{
+    public static void main(String args[]){
+
+        Scanner in = new Scanner(System.in);
+        int numUno = 0, numDos = 0, resultado = 0;
+        int signo = 0;
+
+        System.out.println("************************************************");
+        System.out.println("* Bienvenidos a la primera calculadora de Ivan *");
+        System.out.println("************************************************");
+        System.out.println("");
+        System.out.println("Que operacion quieres realizar?\n  Marque con el numero correspondiente:\n  - 1 sumar\n  - 2 restar\n  - 3 dividir\n  - 4 multiplicar");
+            signo = in.nextInt();
+ 
+        System.out.println("Dame el primer valor para realizar la operacion: ");
+            numUno = in.nextInt();
+
+        System.out.println("Dame el segundo valor para realizar la operacion: ");        
+            numDos = in.nextInt();
+
+        switch(signo){
+
+            case 1: resultado = numUno + numDos;
+                System.out.println("El resultado de la suma es: " + resultado);
+                break;
+
+            case 2: resultado = numUno - numDos;
+                System.out.println("El resultado de la resta es: " + resultado);
+                break;
+
+            case 3: resultado = numUno / numDos;
+                System.out.println("El resultado de la division es: " + resultado);
+                break;
+
+            case 4: resultado = numUno * numDos;
+                System.out.println("El resultado de la multiplicacion es: " + resultado);
+                break;
+
+            default: System.out.println("Error, la opcion no existe");
+                     break;
+    }
+     
+
+    }
+}
