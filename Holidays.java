@@ -7,9 +7,9 @@ public class Holidays{
         String name = "";
         int key = 0, seniority = 0;
 
-        System.out.println("***********************************************************************************************");
-        System.out.println("*Bienvenidos al sistema de asignación de vacaciones para empleados en Transportes-Ivan company*");
-        System.out.println("***********************************************************************************************"); 
+        System.out.println("*************************************************************************************************");
+        System.out.println("* Bienvenidos al sistema de asignación de vacaciones para empleados en Transportes-Ivan company *");
+        System.out.println("*************************************************************************************************"); 
         System.out.println("");       
         System.out.println(""); 
         System.out.println("Recuerda la clave de tu departamento: 1 operario, 2 Administracion, 3 Gerencia.");
