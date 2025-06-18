@@ -1,0 +1,21 @@
+public class ForLoops{
+    public static void main(String[] args){
+        
+        for(int i=1; i <= 10; i++)
+            System.out.print(i + ", ");
+
+    }
+}
+
+/*
+this is la sintaxis y structure of the loop 'for'
+first writing in lower case 'for' after open the () inside of this starting variable 'int i = ;'
+ (this part the name is i* for clean code 'i' of the initiation only used for starting program).
+next i <= 10; (here we writing variable i more the condition example is i* more big than 10? )
+if i* is less than 10 the loop keep run.
+next this loop starting in 1 and finish in 10 to make it stop we can make each turn add one for
+ example with this intruction i++ or subtrac one i-- or what add two in two i = 2.
+when this is complete print out 1 2 3 4 5 6 7 8 9 10 and we can make to see well  concatenamos i + ", "
+the exit there see:1, 2, 3, 4, 5, ....
+
+*/
