@@ -15,7 +15,7 @@ first writing in lower case 'for' after open the () inside of this starting vari
 next i <= 10; (here we writing variable i more the condition example is i* more big than 10? )
 if i* is less than 10 the loop keep run.
 next this loop starting in 1 and finish in 10 to make it stop we can make each turn add one for
- example with this intruction i++ or subtrac one i-- or what add two in two i = 2.
+ example with this intruction i++ or subtrac one i-- or what add two in two i += 2.
 when this is complete print out 1 2 3 4 5 6 7 8 9 10 and we can make to see well  concatenamos i + ", "
 the exit there see:1, 2, 3, 4, 5, ....
 
@@ -26,7 +26,7 @@ primero escribimos en minuscula for despues abrimos ( ) dentro de esto iniciamos
 sigiente i <= 10; aqui nostros escribimos la variable i mas la condicion ejemplo  es i mas grande que 10?
 si i is mas pequeño o igual que 10 sigue corriendo el bucle
 este bucle lo comenzamos con 1  y finaliza en 10 para llegar a 10 y que pare el bucle y sume de unno en uno
-ponemos i++ si queremos restar  de uno en uno i-- si queremos poner que sume de dos en dos i = 2.
+ponemos i++ si queremos restar  de uno en uno i-- si queremos poner que sume de dos en dos i += 2.
 cuando llegue a 10 hara otra vuelta en la que en este bucle sumaria uno mas pero la condicion dice que cuando i 
 sea mayor que 10 se corta el bucle entonces  sumaria 11 volveria a pasar por el bucle y le preguntaaria
 es 11 menor o igual que 10? como es false se corta el bucle y no se guarda ese 11 y la siguiente accion es imprimir el programa
