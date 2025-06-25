@@ -1,7 +1,7 @@
 public class Conditional{
     public static void main(String args[]){
         int bbdd = 6;
-        int sistemasInformaticos = 8;
+        int sistemasInformaticos = 7;
         int ingles = 7;
         int promedio = 0;
 
