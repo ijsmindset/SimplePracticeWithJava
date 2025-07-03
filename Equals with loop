@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Equals {
+    public static void main(String[] args) {
+
+        Scanner in = new Scanner(System.in);
+        String nameOne = "", nameTwo = "";
+        String choice = "";
+
+        do {
+            System.out.print("\nEnter first name: ");
+            nameOne = in.nextLine();
+
+            System.out.print("Enter second name: ");
+            nameTwo = in.nextLine();
+
+            if (nameOne.equals(nameTwo)) {
+                System.out.println("The names are the same.");
+            } else {
+                System.out.println("The names are not the same.");
+            }
+
+            System.out.println("\nType 1 to exit, or any other key to compare again:");
+            choice = in.nextLine();
+
+        } while (!choice.equals("1"));
+
+        System.out.println("Program ended.");
+        in.close();
+    }
+}
