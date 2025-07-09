@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class LengthSubstring{
+    public static void main(String[] args){
+
+        String stringOriginal = "", stringSubtract = "", answer = "";
+        int numChar = 0, from = 0, until = 0;
+        Scanner in = new Scanner(System.in);
+
+        do{
+
+            System.out.print("Enter a string of characters: ");
+            stringOriginal = in.nextLine();
+      
+            numChar = stringOriginal.length();
+            System.out.println("The string of charters " + stringOriginal + " have to " +
+                                numChar + " characters. ");
+
+            System.out.print("From which character you want to get the new string?");
+            from = in.nextInt();
+
+            System.out.print("Until which character you want to get the new string?");
+            until = in.nextInt();
+
+            if (from >= 0 && until <= numChar && from < until){  // evita que sean valores negativos despues que no sea un numero mayor que los que tiene si son 10 no puedes poner 14 y que valla de menor a mayor.
+                stringSubtract = stringOriginal.substring(from, until);
+                System.out.println("The new string is: " + stringSubtract);
+            } else {
+                System.out.println("Invali range. Please try again");
+            }
+            
+            in.nextLine(); // para limpiar buffer
+            System.out.print("Do you want to try again? (y/n): ");
+            answer = in.nextLine();
+       
+        }while( answer.equals("y")); // si responde "y" vuelve a iniciar, si no, sale del loop
+
+        in.close(); // cerramos escaner
+
+        System.out.println("Program finished");
+    }
+}
