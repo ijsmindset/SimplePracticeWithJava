@@ -19,5 +19,46 @@ public class ArrayDinamic{
             System.out.print("[" + number[i] + "]"); // va impriendo desde el cero hasta el tope de number que lo cuenta length
         }
         in.close();
-    }
+    } 
 }
+/* 
+--EN version--
+# ArrayDinamic.java
+
+This Java program allows the user to create a dynamic array of integers. The user specifies how many numbers to enter, then enters each number and finally the program displays all the stored values.
+
+## Exercise objectives
+
+- Use of the `Scanner` class for keyboard input.
+- Create dynamically sized arrays defined at runtime.
+- Use of `for` loops to traverse arrays.
+- Practice basic Java concepts such as data types, arrays and control structures.
+- Correct closing of resources (`Scanner`).
+
+## Operation
+
+1. The program prompts the user for the number of numbers to enter.
+2. An array of that length is created.
+3. The array is traversed by asking the user to enter each value.
+4. The entire contents of the array are printed to the screen.
+
+--ES versión--
+
+# ArrayDinamic.java
+
+Este programa Java permite al usuario crear una matriz dinámica de números enteros. El usuario especifica cuántos números introducir, luego introduce cada número y finalmente el programa muestra todos los valores almacenados.
+
+## Objetivos del ejercicio
+
+- Uso de la clase `Scanner` para la entrada por teclado.
+- Creación de arrays con tamaño dinámico definido en tiempo de ejecución.
+- Uso de bucles `for` para recorrer arrays.
+- Práctica de conceptos básicos de Java, como tipos de datos, arrays y estructuras de control.
+- Cierre correcto de recursos (`Scanner`).
+
+## Funcionamiento
+
+1. El programa solicita al usuario el número de números a introducir.
+2. Se crea un array de esa longitud.
+3. Se recorre el array pidiendo al usuario que introduzca cada valor.
+4. El contenido completo del array se imprime en pantalla */
