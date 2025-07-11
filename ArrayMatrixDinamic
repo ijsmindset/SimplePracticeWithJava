@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ArrayMatrix{
+    public static void main(String[] args){
+        
+        Scanner in = new Scanner(System.in);
+        int rows = 0, columns = 0, count = 1;
+
+        System.out.println("How many rows do you want enter?  ");
+        rows = in.nextInt();
+
+        System.out.println("How many columns do you want enter?  ");
+        columns = in.nextInt();
+
+        int number [][] = new int [rows][columns];
+
+        for(int j = 0; j < rows; j++){
+            for(int i = 0; i < columns; i++){
+                
+                number [j][i] = count;
+                count++;
+                System.out.print("[" + number[j][i] + "]");
+            }
+            System.out.println("");
+        }               
+        in.close();
+    }
+}
