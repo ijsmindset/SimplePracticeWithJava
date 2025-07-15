@@ -1,0 +1,31 @@
+import javax.swing.*;
+
+public class FormTwo extends JFrame{
+
+    private JLabel labelOne;
+    private JLabel labelTwo;
+    private JLabel labelThree;
+
+    public FormTwo(){
+        setLayout(null);
+        labelOne = new JLabel("Display interface.");
+        labelOne.setBounds(10,20,300,30);
+        add(labelOne);
+
+        labelTwo = new JLabel("Versión 1.0");
+        labelTwo.setBounds(10,100,100,30);
+        add(labelTwo);
+
+        labelThree = new JLabel("Created by Ivan from java since 15/07/2025");
+        labelThree.setBounds(10,50,300,30);
+        add(labelThree);
+    }  
+
+    public static void main(String[] args){
+        FormTwo formOne = new FormTwo();
+        formOne.setBounds(0,0,300,200);
+        formOne.setResizable(false);
+        formOne.setVisible(true);
+        formOne.setLocationRelativeTo(null);
+    }
+}
