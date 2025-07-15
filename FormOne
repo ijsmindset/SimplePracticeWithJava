@@ -1,0 +1,16 @@
+import javax.swing.*; // libreria de interfaz mas* para usar todo su contenido
+
+public class FormOne extends JFrame{  // extends para hacer herencia en este caso de la class JFrame
+
+    public FormOne(){  // contructor usamos nombre de la class para usar la herencia de JFrame y publico para que JFrame pueda acceder y leer lo que le pedimos
+        setLayout(null);  // este set le indicamos donde aparece la interfaz pero con null dejamos que en otra parte podemos programar donde queramos ponerlo
+    }
+
+    public static void main(String[] args){ // arranque del programa
+        FormOne form1 = new FormOne();        // class de objeto igual al nombre class para usar herencia de JFrame
+        form1.setBounds(0,0,800,550);       // primer numero para poner la ventana de izq "0" hacia la derecha, el segundo de arriba "0" a abajo el tercero ancho de interfaz y el 4 la altura de interfaz
+        form1.setVisible(true);              // booleano true para que se vea la interfaz o false para que no se vea
+        form1.setLocationRelativeTo(null); // con este set en null la ventana o interfaz aparece en el medio por encima de la orden de setBound
+        form1.setResizable(false);          // con este set en false no dejamos que varie el tamaño de la ventana
+    }
+}
