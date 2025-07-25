@@ -59,7 +59,7 @@ public class Rgb extends JFrame implements ActionListener{
             int red = Integer.parseInt(string1);
             int green = Integer.parseInt(string2);
             int blue = Integer.parseInt(string3);
-
+/ here look at code up
             Color color1 = new Color(red, green, blue); 
             button1.setBackground(color1);           
         }
