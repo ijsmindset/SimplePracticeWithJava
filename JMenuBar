@@ -1,0 +1,52 @@
+import java.awt.*;
+import java.awt.event.*;
+
+public class Menu extends JFrame implements ActionListener{
+
+    private JMenuBar menubar;
+    private JMenu menuOne;
+    private JMenuItem menuitemOne, menuitemTwo, menuitemThree;
+
+    public Menu(){
+         setLayout(null);
+        
+         menubar = new JMenuBar();
+         setJMenuBar(menubar);   // creación de la barra de arriba de la ventana
+
+         menuOne = new JMenu("Options"); // pestaña de opciones
+         menubar.add(menuOne);  // agregar la pestaña opciones a la barra
+
+         menuitemOne = new JMenuItem("Red");
+         menuitemOne.addActionListener(this);
+         menuOne.add(menuitemOne);
+
+         menuitemTwo = new JMenuItem("Green");
+         menuitemTwo.addActionListener(this);
+         menuOne.add(menuitemTwo);
+
+         menuitemThree = new JMenuItem("Blue");
+         menuitemThree.addActionListener(this);
+         menuOne.add(menuitemThree);
+        }
+         public void actionPerformed(ActionEvent e){
+             Container background = this.getContentPane();
+
+             if(e.getSource() == menuitemOne){
+                 background.setBackground(new Color(255,0,0));
+             }
+             if(e.getSource() == menuitemTwo){
+                 background.setBackground(new Color(0,255,0));
+             }
+             if(e.getSource() == menuitemThree){
+                 background.setBackground(new Color(0,0,255));
+             }
+
+         }
+
+         public static void main(String[] args){
+         Menu menu = new Menu();
+         menu.setBounds(0,0,400,300);
+         menu.setVisible(true);
+         menu.setLocationRelativeTo(null);
+         }
+}
