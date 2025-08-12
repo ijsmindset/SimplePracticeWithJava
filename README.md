@@ -1,4 +1,4 @@
-### EN
+### (EN)
 # EjerciciosJava
 # Java Practice Exercises to Learn and Improve
 
@@ -28,7 +28,7 @@ If you find any mistakes, have suggestions, or ideas to improve the exercises, t
 Thanks for visiting this repository. Step by step, we improve!
 
 ---
-### ES
+### (ES)
 # EjerciciosJava
 # Ejercicios prácticos de Java para aprender y mejorar
 
