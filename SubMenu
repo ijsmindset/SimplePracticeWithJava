@@ -1,0 +1,66 @@
+import javax.swing.*; // libreria para interfaz
+import java.awt.*;   // libreria para colores y demas
+import java.awt.event.*;  // libreria para eventos
+
+public class SubMenu extends JFrame implements ActionListener{  // escribimos la clase  las extensiones y la implementacion de escuchar si hay accion
+
+    private JMenuBar menuBar;
+    private JMenu menuOne, menuTwo, menuThree;
+    private JMenuItem menuItemOne, menuItemTwo, menuItemThree, menuItemFour;  // declaramos las variables con los modificadores de acceso en privado
+
+    public SubMenu(){   // creamos el constructor para darle diseño
+        setLayout(null);
+
+        menuBar = new JMenuBar();  // este es para poner la barra arriba para poner opciones
+        setJMenuBar(menuBar);
+
+        menuOne = new JMenu("Options"); // ponemos una pestaña y la agregamos a la barra pestaña menuOne add al menuBar
+        menuBar.add(menuOne);
+
+        menuTwo = new JMenu("Window size"); // esta pestaña la alojamos dentro de la menuOne o la que tiene el texto Options al dar click en Options saldria el menu de estas lineas poniendo window size
+        menuOne.add(menuTwo);
+
+        menuThree = new JMenu("Window colour");  // igual que el de arriba seria otra opcion del la pestaña Options con el texto window colour
+        menuOne.add(menuThree);
+
+        menuItemOne = new JMenuItem("300*200");  // mirar bien como agregamos add y aparte actionlistener seria una de las pestañas del submenu de la opcion window size
+        menuTwo.add(menuItemOne);
+        menuItemOne.addActionListener(this);
+
+        menuItemTwo = new JMenuItem("640-480");   //  igual que el siguiente de arriba otra opcion del submenu
+        menuTwo.add(menuItemTwo);
+        menuItemTwo.addActionListener(this);
+
+        menuItemThree = new JMenuItem("Red");   //  otro submenu esta vez de la opcion window colour mirar el add
+        menuThree.add(menuItemThree);
+        menuItemThree.addActionListener(this);
+
+        menuItemFour = new JMenuItem("Green");  // igual que el de arriba otra opcion del submenu mirar el add
+        menuThree.add(menuItemFour);
+        menuItemFour.addActionListener(this);
+    }
+
+        public void actionPerformed(ActionEvent e){  // aqui creamos la accion de cada click segun la pestaña
+            if(e.getSource() == menuItemOne){        //  creamos 4 condicionales anidadas en la que con la variable e recuperamos con getSource() la accion ocurrida en menuItemOne con el comparador ==
+                setSize(300,200);
+            }
+            if(e.getSource() == menuItemTwo){        // igual que el anterior.
+                setSize(640,480);
+            }
+            if(e.getSource() == menuItemThree){
+                getContentPane().setBackground(new Color(255,0,0)); // parecido a los dos anteriores pero aparte con getContentPane() recoge la medida de interfaz actual por si lo ha cambiado el usuario..
+            }                                                       //  .. asi al cambiar el color no cambia la interfaz al tamaño original  setBackground es el set de fondo y con new Color y eligiendo rpg..
+            if(e.getSource() == menuItemFour){                      // .. podemos darle al color que queramos y cuando el usuario haga click cambiara el color manteniedo el tamaño de interfaz elegido
+                getContentPane().setBackground(new Color(0,255,0));  // los tres comentarios anteriores son uno solo
+            }
+        }
+
+        public static void main(String[] args){     // escribimos el metodo main
+
+            SubMenu submenu = new SubMenu();        // creamos el objeto para crear la interfaz grafica
+            submenu.setLayout(null);                 // diseño null para poder poner las medidas de queramos  
+            submenu.setBounds(0,0,300,200);          // aqui ponemos las medidas que queremos al tener null en setLayout
+            submenu.setVisible(true);                // pregunta si quermemos que sea visible este objeto en este caso la interfaz le decimos que si = true
+            submenu.setResizable(false);             // puede el cliente cambiar el tamaño a su gusto? no = false
+            submenu.setLocationRelativeTo(null);     // donde aparecera el objeto en este caso la interfaz? null = centro
+       }
