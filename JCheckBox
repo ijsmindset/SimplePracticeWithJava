@@ -1,0 +1,50 @@
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Check extends JFrame implements ChangeListener{   // Para dar evento a JCheckBox usamos ChangeListener
+
+    private JCheckBox checkOne, checkTwo, checkThree; // cada botón check que queramos tenemos que declarar un componente por cada uno.
+
+    public Check(){
+        setLayout(null);
+      
+        checkOne = new JCheckBox("English"); // iniciamos el objeto check y que aparezca el texto english
+        checkOne.setBounds(10,10,150,30);  // seleccionamos los bordes x10 y10 largo de escrito hasta 150 y anchura para texto hasta 30
+        checkOne.addChangeListener(this);  // agregamos la escucha de si se produce un cambio en este check si es sí toma accion (this)
+        add(checkOne);                     // agregamos todo este objeto construido a checkOne
+
+        checkTwo = new JCheckBox("French"); // mismo que arriba cambiando texto en display  y altura de Y
+        checkTwo.setBounds(10,50,150,30);
+        checkTwo.addChangeListener(this);
+        add(checkTwo);
+
+        checkThree = new JCheckBox("Spanish");
+        checkThree.setBounds(10,90,150,30);
+        checkThree.addChangeListener(this);
+        add(checkThree);
+
+    }
+
+    public void stateChanged(ChangeEvent e){
+        String written="";
+
+        if(checkOne.isSelected() == true){  // con esto si checkOne esta selecionado y con == compara  true que si esta selecionado toma accion y realiza las instrucciones si no pasa al siguiente condicional
+            written = written + "English-";  // con esta linea decimos que guarde en la variable written lo que este en written mas English
+        }
+        if(checkTwo.isSelected() == true){
+            written = written + "French-";
+        }
+        if(checkThree.isSelected() == true){
+            written = written + "Spanish";
+        }
+        setTitle(written); // esta linea decimeos que en el titulo de la ventana se aloje lo que este en la variable written mirar las condicionales para ver que entra segun cuantos check presionemos
+    }
+
+    public static void main(String[] args){  // creamos el main y la interfaz
+        Check check = new Check();   // iniciamos el objeto de la clase check
+        check.setBounds(0,0,350,200);  // ponemos los bordes los dos primeros son son donde se situa la ventana ponemos cero para luego darle otra orden, x350, y200 tamaño ventana
+        check.setVisible(true);       // interfaz visible? si true
+        check.setResizable(false);    // el usuario puede cambiar el tamaño? no false
+        check.setLocationRelativeTo(null);  // con esta linea y el null indicamos que aparezca en el centro de la pantalla por eso en bounds pusimos valores 0
+    }
+}
