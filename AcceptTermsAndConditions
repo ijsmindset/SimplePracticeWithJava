@@ -1,0 +1,52 @@
+import javax.swing.*;
+import javax.swing.event.*;
+import java.awt.*;
+import java.awt.event.*;
+
+public class Agree extends JFrame implements ActionListener, ChangeListener{
+
+    private JButton buttonOne;
+    private JCheckBox checkOne;
+    private JLabel labelOne;
+
+    public Agree(){
+        setLayout(null);
+
+        labelOne = new JLabel("Accept terms and conditions");
+        labelOne.setBounds(10,10,400,30);
+        add(labelOne);
+
+        checkOne = new JCheckBox("Accept");
+        checkOne.setBounds(10,50,100,30);
+        checkOne.addChangeListener(this);
+        add(checkOne);
+        
+        buttonOne = new JButton("Continue");
+        buttonOne.setBounds(10,100,100,30);
+        add(buttonOne);
+        buttonOne.addActionListener(this);  // verifica si tiene accion el buttonOne y ejecuta
+        buttonOne.setEnabled(false);        // esta linea habilita el buttonOne pero le ponemos false para que inicie el programa sin poder pulsarlo hasta que de al checkbox
+    }
+
+    public void stateChanged(ChangeEvent e){  // damos opción a recoger algún cambio en algún checkbox en este caso checkOne y lo alojamos en la variable e
+        if(checkOne.isSelected() == true){  // condición si checkOne es seleccionado la siguiente linea da verdadero a activar el buttonOne
+            buttonOne.setEnabled(true);
+        } else{                           // pero si no es seleccionado o se quita la selección de checkbox en este caso checkOne se pondrá en false y desabilita el buttonOne para no hacer click en el
+            buttonOne.setEnabled(false);
+        }
+    }
+
+    public void actionPerformed(ActionEvent e){  // damos eventos de accion y los alojamos en la variable e
+        if(e.getSource() == buttonOne){  // recupera si hay alguna accion en buttonOne en la variable "e" con getSource
+            System.exit(0);  // esta linea cierra el proceso mata el proceso cierra la interfaz
+        }
+    }
+
+    public static void main(String[] args){
+        Agree agree = new Agree();
+        agree.setBounds(0,0,350,200);
+        agree.setVisible(true);
+        agree.setResizable(false);
+        agree.setLocationRelativeTo(null);
+    }
+}
