@@ -1,0 +1,54 @@
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class RadioButton extends JFrame implements ChangeListener{
+    
+    private JRadioButton radioOne, radioTwo, radioThree;
+    private ButtonGroup bg;
+   
+    public RadioButton(){
+        setLayout(null);
+        bg = new ButtonGroup();
+        radioOne = new JRadioButton("640*480");
+        radioOne.setBounds(10,20,100,30);
+        radioOne.addChangeListener(this);
+        add(radioOne);
+        bg.add(radioOne);
+
+        radioTwo = new JRadioButton("800*600");
+        radioTwo.setBounds(10,70,100,30);
+        radioTwo.addChangeListener(this);
+        add(radioTwo);
+        bg.add(radioTwo);
+
+        radioThree = new JRadioButton("1024*768");
+        radioThree.setBounds(10,120,100,30);
+        radioThree.addChangeListener(this);
+        add(radioThree);
+        bg.add(radioThree);
+    }
+
+    public void stateChanged(ChangeEvent e){
+        if(radioOne.isSelected()){   // en JRadioButton cuando se selecciona una opción se quita la que estaba por eso estas condicionales no tienen el else automáticamente pinchas una anula otra no como JcheckBox que las acumula
+            setSize(640,480);
+            setTitle("change to 640*480");
+        }
+        if(radioTwo.isSelected()){
+            setSize(800,600);
+            setTitle("change to 800*600");
+        }
+        if(radioThree.isSelected()){
+            setSize(1024,768);
+            setTitle("change to 1024*768");
+        }
+    }
+    
+    public static void main(String[] args){
+        RadioButton radio = new RadioButton();
+        radio.setBounds(0,0,350,280);
+        radio.setVisible(true);
+        radio.setResizable(false);
+        // no ponemos setLocationRelativeTo para que aparezca como hemos programado la interfaz.
+    }
+
+}
