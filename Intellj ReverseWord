@@ -1,0 +1,21 @@
+
+import java.util.Scanner;
+
+public class ReverseWord{
+    public static void main(String[] args) {
+
+        int longWord = 0;
+        String word =  "", reverseWord = "";
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Write a word: ");
+        word = sc.nextLine();
+        longWord = word.length();
+
+        while (longWord != 0) {
+            reverseWord += word.substring(longWord -1, longWord);
+            longWord --;
+        }
+        System.out.println("Reverse word " + reverseWord);
+    }
+}
