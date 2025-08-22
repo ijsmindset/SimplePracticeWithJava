@@ -1,0 +1,16 @@
+public class Rectangular {
+    private int base, height, area;
+
+    public Rectangular(int base, int height) {
+        this.base = base;
+        this.height = height;
+    }
+        public void CalculationArea(){
+            area = base*height;
+        }
+        public void Print(){
+            CalculationArea();
+            System.out.println("The area of the rectangular is: " + area);
+        }
+
+}
