@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class RectangularArea {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Give me the height value: ");
+        int height = sc.nextInt();
+
+        System.out.println("Give me the base value: ");
+        int base = sc.nextInt();
+
+        Rectangular send = new Rectangular(height, base);
+
+        send.Print();
+    }
+}
