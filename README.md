@@ -51,7 +51,7 @@ Este repositorio es un trabajo en progreso. Mis objetivos incluyen:
 - Añadir nuevos ejercicios a medida que sigo aprendiendo.
 
 ## Motivación
-Aprender a programar bien no consiste solo en escribir código que funcione, sino en comprenderlo, explicarlo y mejorarlo. Este proyecto es mi espacio para crecer como desarrollador y documentar ese viaje.
+Aprender a programar bien, no consiste solo en escribir código que funcione, sino en comprenderlo, explicarlo y mejorarlo. Este proyecto es mi espacio para crecer como desarrollador y documentar ese viaje.
 
 ### Nota
 Si encuentras algún error, tienes sugerencias o ideas para mejorar los ejercicios, ¡son más que bienvenidos!
