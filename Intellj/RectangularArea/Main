@@ -1,18 +1,18 @@
 
-import java.util.Scanner;
+import java.util.Scanner; // importing the Library to introduce characters
 
-public class RectangularArea {
-    public static void main(String[] args) {
+public class RectangularArea {  // public class and put the name
+    public static void main(String[] args) { // main public class and declare that it will have stored string arguments
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); // creation the objetc type scanner with name sc
 
-        System.out.println("Give me the height value: ");
-        int height = sc.nextInt();
+        System.out.println("Give me the height value: "); // leave in display with text
+        int height = sc.nextInt();  declaration of variable and enter first writtn with method scanner
 
-        System.out.println("Give me the base value: ");
+        System.out.println("Give me the base value: "); // the same as above
         int base = sc.nextInt();
 
-        Rectangular send = new Rectangular(height, base);
+        Rectangular send = new Rectangular(height, base); 
 
         send.Print();
     }
