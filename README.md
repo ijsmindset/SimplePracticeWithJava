@@ -25,7 +25,7 @@ Learning to code well isn't just about writing code that works—it's about unde
 
 ### Note
 If you find any mistakes, have suggestions, or ideas to improve the exercises, they’re more than welcome!
-Thanks for visiting this repository. Step by step, we improve!
+Thanks for visiting this repository. Step by step, I can improve!
 
 ---
 ### (ES)
@@ -55,4 +55,4 @@ Aprender a programar bien, no consiste solo en escribir código que funcione, si
 
 ### Nota
 Si encuentras algún error, tienes sugerencias o ideas para mejorar los ejercicios, ¡son más que bienvenidos!
-Gracias por visitar este repositorio. ¡Paso a paso, mejoramos! 
+Gracias por visitar este repositorio. ¡Paso a paso, se mejora! 
