@@ -1,9 +1,11 @@
-public class Fibonacci{
-    public static void main(String[] args){
+// this code create the suequence of Fibonacci
 
-        int i = 0, a = 0, b = 1, c = 0;
+public class Fibonacci{  // is basic code only display terminal bash  declare de public class 
+    public static void main(String[] args){ // declare the main and inside it have to arguments of type String
 
-        System.out.println("Fibonacci with loop for");
+        int i = 0, a = 0, b = 1, c = 0;  // declare all variables type integer 'int' and declare value 0 for enter others numbers
+
+        System.out.println("Fibonacci with loop for"); // leave in display of text, and example to sequence of Fibonacci with loop 'for' 
         
         for(i = 0; i < 10; i++){
             if(i < 9){
