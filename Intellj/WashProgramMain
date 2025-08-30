@@ -1,0 +1,18 @@
+import washprogram.WashProgram;
+import java.util.Scanner;
+
+public class WashingMachineMain {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Introduce el peso de la ropa (kg): ");
+        int peso = scanner.nextInt();
+        scanner.nextLine(); // clean the buffer or close the scanner , for clean code
+
+        System.out.print("Introduce el tipo de ropa (ropa blanca, ropa de color, jeans): ");
+        String tipo = scanner.nextLine();
+
+        WashProgram washProgram = new WashProgram(peso, tipo);
+        washProgram.CycleCompleted();
+    }
+}
