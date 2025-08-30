@@ -1,0 +1,93 @@
+package washprogram;
+
+
+public class WashProgram {
+
+    private int weight = 0, completefilling = 0, typeClothing = 0, washingComplete = 0, dryingComplete = 0;
+    // its up declare the variables as private to avoid that the programmers. look at that.
+    public WashProgram(int weight, int typeClothing) {
+        this.weight = weight; // call this.weight for use the variable weight in the class
+        // and = weight for use the variable weight in the constructor out of the class
+        this.typeClothing = typeClothing; // this.typeClothing for use the variable typeClothing in the class
+        // and = typeClothing for use the variable typeClothing in the constructor out of
+
+
+    }
+    private void fillwater(){  // this method use for washing
+        if(weight <= 15){ //  conditional if, written weight <= 15kg if true the washing machine can fill the water
+            completefilling = 1; // enter in variable completefilling the value 1 for use more late this variable
+            System.out.println("Filling..."); // print in console Filling...
+            System.out.println("Filling complete"); // print in console Filling complete
+        }else{ // conditional if, written weight > 15kg if true the washing machine cannot fill the water
+            System.out.println("The washing machine cannot hold more than 15 kg of clothes"); // print this text in console
+        }
+    }
+    private void wash(){ // this method use for the washing
+        fillwater(); // call the method fillwater for look if the washing machine have to fill the water
+        // conditional if, written completefilling == 1 if true the washing machine can wash
+        // because the washing machine have filled the water
+        // if false the washing machine cannot wash because the washing machine cannot fill the water
+        // because the weight of clothes is more than 15kg
+        // this conditional if is inside the method wash for avoid that the programmers can use this method
+        if( completefilling == 1){ // conditional if, written completefilling == 1 if true the washing machine can wash
+            if(typeClothing == 1){ // conditional if, written typeClothing == 1 if true the washing machine will do a gentle wash
+                System.out.println("White clothes / gentle wash"); // print in console White clothes / gentle wash
+                System.out.println("Washing..."); // print in console Washing...
+                completefilling = 1; // enter in variable completefilling the value 1 for use more late this variable
+            } else if(typeClothing == 2){ // conditional if, written typeClothing == 2 if true the washing machine will do a normal wash
+                System.out.println("Colored clothes / normal wash"); // print in console Colored clothes / normal wash
+                System.out.println("Washing..."); // print in console Washing...
+                completefilling = 1; // enter in variable completefilling the value 1 for use more late this variable
+            } else if(typeClothing == 3){ // conditional if, written typeClothing == 3 if true the washing machine will do a strong wash
+                System.out.println("Jeans / strong wash"); // print in console Jeans / strong wash
+                System.out.println("Washing...");  // print in console Washing...
+                completefilling = 1;  // enter in variable completefilling the value 1 for use more late this variable
+            } else { // conditional if, written typeClothing != 1 && typeClothing != 2 && typeClothing != 3 if true the washing machine will do a normal wash
+                System.out.println("The type of clothing is not valid");  // print in console The type of clothing is not valid
+                System.out.println("It,s going to be a normal wash"); // print in console It,s going to be a normal wash
+                washingComplete = 1; // enter in variable washingComplete the value 1 for use more late this variable
+            }
+        }
+
+    }
+    private void Drying() {  // this method use for the drying
+        wash();  // call the method wash for look if the washing machine have to wash
+        if (washingComplete == 1) {  // conditional if, written washingComplete == 1 if true the washing machine can dry
+            System.out.println("Drying...");  // print in console Drying...
+            dryingComplete = 1;  // enter in variable dryingComplete the value 1 for use more late this variable
+        }
+    }
+    public void CycleCompleted(){  // this method is public for that the programmers can use this method
+        Drying();    // call the method Drying for look if the washing machine have to dry
+        // conditional if, written dryingComplete == 1 if true the washing machine has completed the cycle
+        // because the washing machine have dried the clothes
+        // if false the washing machine cannot complete the cycle because the washing machine cannot dry
+        // because the weight of clothes is more than 15kg
+        // this conditional if is inside the method CycleCompleted for avoid that the programmers can use this method
+        if(dryingComplete == 1){; // conditional if, written dryingComplete == 1 if true the washing machine has completed the cycle
+            System.out.println("Cycle completed\n your clothes are ready");  // print in console Cycle completed your clothes are ready
+        }
+    }
+}
+/*
+EN
+The company requests the development of a programmed class (not a complete programme) in Java for the logical operation
+of a model of its washing machines, which its programmers can easily implement in the
+programmes developed by the company with the following characteristics:
+1. It must receive the weight of laundry and type of laundry through arguments.
+2. It must perform the functions of filling with water, washing and drying.
+3. The class must be correctly encapsulated to prevent the company's programmers from using methods
+ or variables that are not necessary.
+4. The only method available for importing must be cycle completed.
+
+ES
+La empresa solicita el desarrollo de una clase programada(no un programa completo) en java para el funcionamiento
+logico de un modelo de sus lavadoras, misma que puedan implementar sus programadores de manera sencilla en los
+ programas desarrollados por la empresa con las siguientes caracteristicas:
+1. Debe recibir los kilos de ropa y tipo de ropa a traves de argumentos.
+2. Debe de realizar las funciones de llenado de agua , lavado y secado.
+3. La clase debe estar correctamente encapsulada para evitar que los programadores de la empresa utilicen metodos
+ o variables que no son necesarios
+4. El unico metodo disponible para importar debe de ser cycle completed.
+
+ */
