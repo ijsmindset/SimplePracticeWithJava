@@ -1,3 +1,6 @@
+
+package mainapp;
+
 import washprogram.WashProgram;
 import java.util.Scanner;
 
@@ -5,14 +8,15 @@ public class WashingMachineMain {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Introduce el peso de la ropa (kg): ");
-        int peso = scanner.nextInt();
-        scanner.nextLine(); // clean the buffer or close the scanner , for clean code
+        System.out.print("Enter the weight of the laundry (kg): ");
+        int weight = scanner.nextInt();
 
-        System.out.print("Introduce el tipo de ropa (ropa blanca, ropa de color, jeans): ");
-        String tipo = scanner.nextLine();
-
-        WashProgram washProgram = new WashProgram(peso, tipo);
+        System.out.print("Enter the type of clothing (1 = white, 2 = colored, 3 = jeans): ");
+        int TypeClothing = scanner.nextInt();
+        //---create here down an object of WashProgram class for setter and getter demonstration
+        WashProgram washProgram = new WashProgram(weight, TypeClothing);
+        washProgram.setTypeClothing(3); // Set type to 3 (jeans) for demonstration
+        System.out.println("the type of clothing is set to: " + washProgram.getTypeClothing());
         washProgram.CycleCompleted();
     }
 }
