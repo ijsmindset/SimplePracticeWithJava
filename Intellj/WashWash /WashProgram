@@ -3,7 +3,7 @@ package washprogram;
 public class WashProgram {
 
     private int Weight = 0, IsFilling = 0, TypeClothing = 0, WashingComplete = 0, DryingComplete = 0;
-    // It's good to declare the variables as private to prevent programmers from accessing them directly.
+    // It's good to declare the variables as private to prevent programmers from accessing them directly  .
 
     public WashProgram(int Weight, int TypeClothing) {
         this.Weight = Weight; // this.weight refers to the class variable of here this one place; weight refers to the constructor parameter
