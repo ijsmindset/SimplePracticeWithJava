@@ -1,4 +1,4 @@
-// this code create the suequence of Fibonacci
+// hi, this code create the suequence of Fibonacci
 
 public class Fibonacci{  // is basic code only display terminal bash  declare de public class 
     public static void main(String[] args){ // declare the main and inside it have to arguments of type String
