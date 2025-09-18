@@ -25,6 +25,7 @@ public class VectorPractic{
       System.out.println("**********************");
       System.out.println("* vectores Dinamicos *");
       System.out.println("**********************");
-/*trial --version*/
+/* trial --version
+use of array simple*/
  }
 }
