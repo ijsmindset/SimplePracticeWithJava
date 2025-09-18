@@ -8,7 +8,7 @@ public class Check extends JFrame implements ChangeListener{   // Para dar event
     public Check(){
         setLayout(null);
       
-        checkOne = new JCheckBox("English"); // iniciamos el objeto check y que aparezca el texto english
+        checkOne = new JCheckBox("English"); // iniciamos el objeto check y que aparezca el texto english.
         checkOne.setBounds(10,10,150,30);  // seleccionamos los bordes x10 y10, largo de escrito hasta 150 y anchura para texto hasta 30
         checkOne.addChangeListener(this);  // agregamos la escucha de si se produce un cambio en este check si es sí toma accion (this)
         add(checkOne);                     // agregamos todo este objeto construido a checkOne
