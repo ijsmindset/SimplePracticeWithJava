@@ -7,13 +7,13 @@ public class VectorPractic{
 
    Scanner in = new Scanner(System.in);
 
-   System.out.println("dame la cantidad de huecos #: ");
+   System.out.println("Give me the number of positions #: ");
    longitud = in.nextInt();
 
    int numeros[] = new int [longitud];
 
    for(int i = 0; i < numeros.length; i++){
-    System.out.println("dame el valor#: " + (i + 1));
+    System.out.println("Give me value #: " + (i + 1));
     numeros[i] = in.nextInt();
   }
     for(int i = 0; i < numeros.length; i++){
