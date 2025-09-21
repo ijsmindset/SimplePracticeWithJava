@@ -1,6 +1,7 @@
 import javax.swing.*; // libreria para interfaz
 import java.awt.*;   // libreria para colores y demas
-import java.awt.event.*;  // libreria para eventos
+import java.awt.event.*;  // libreria para eventos 
+ //
 
 public class SubMenu extends JFrame implements ActionListener{  // escribimos la clase  las extensiones y la implementacion de escuchar si hay accion
 
