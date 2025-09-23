@@ -7,7 +7,7 @@ public class ConditionalAnidada{
     int resultado = 0;
 
     if(operacion == 1){
-        resultado = numUno + numDos;
+        resultado = numUno + numDos; //
 
         System.out.println("El resultado de la suma es: " + resultado);
         } else if(operacion == 2){
