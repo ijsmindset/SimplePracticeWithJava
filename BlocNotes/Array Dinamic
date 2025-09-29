@@ -6,7 +6,7 @@ public class ArrayDinamic{
         Scanner in = new Scanner(System.in);
         int length = 0;
 
-        System.out.print("How many numbers do you want to enter?  ");
+        System.out.print("How many numbers do you want to enter?  "); // 
         length = in.nextInt();
 
         int number[] = new int[length];
