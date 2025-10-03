@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Suma {
+public static void main(String[] args)
+{ Scanner scanner = new Scanner(System.in);
+int suma = 0;
+for (int i = 1; i <= 10; i++) {
+System.out.print("Ingrese el valor #" + i + ": ");
+int valor = scanner.nextInt();
+suma += valor;
+}
+System.out.println("La suma de los 10 valores es: " + suma);
+}
+}
