@@ -1,0 +1,20 @@
+import java.util.Scanner; // importamos la biblioteca entrada de teclado
+
+public class Suma {                            // nombre de la clase archivo
+    public static void main(String[] args){     // inicio del programa "main"
+        int valorArray, resultado = 0;           // declaramos dos variables int
+        int[] a = new int[10];                  // declaramos un array con 10 posiciones
+        Scanner sc = new Scanner(System.in);       // creamos el objeto sc tipo scanner
+
+        System.out.println("Ingrese 10 números enteros:");        //imprime en pantalla
+        for(valorArray = 0; valorArray < 10; valorArray++){            //bucle for inicia con valorArray 0 lee si es mayor a 10 y suma uno mas para mover la posicion del array
+            System.out.print("Número en posición " + (valorArray + 1) + ": ");     // imprime numero alojado por usuario y la posicion
+            a[valorArray] = sc.nextInt();                      // introducce los datos de teclado en la variable ciclos que esta dentro del array a
+            resultado += a[valorArray];                // resultado es lo mismo que la suma del los valores del interior del array a que aloja valorArray
+        }
+
+        System.out.println("Ya has introducido los 10 valores.");    // imprime pantalla 
+        System.out.println("El resultado de la suma es: " + resultado);    // imprime pantalla
+    }
+}
+
