@@ -16,7 +16,7 @@ public class Fibonacci{  // is basic code only display terminal bash  declare de
         
             c = a + b;
             a = b;
-            b = c; //
+            b = c; 
         }
         System.out.println("");
        
