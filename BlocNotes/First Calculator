@@ -12,7 +12,7 @@ public class Calculadora{ //
         System.out.println("************************************************");
         System.out.println("");
         System.out.println("Que operacion quieres realizar?\n  Marque con el numero correspondiente:\n  - 1 sumar\n  - 2 restar\n  - 3 dividir\n  - 4 multiplicar");
-            signo = in.nextInt();//
+            signo = in.nextInt();
  
         System.out.println("Dame el primer valor para realizar la operacion: ");
             numUno = in.nextInt();
