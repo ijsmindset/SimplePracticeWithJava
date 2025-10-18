@@ -6,7 +6,7 @@ BEGIN
 	DBMS_OUTPUT.PUT_LINE('El valor de la variable vv_mi_cadena es  '  ||  VV_MI_CADENA);
 	DBMS_OUTPUT.PUT_LINE('La longitud de la variable vv_mi_cadena es  '  ||  LENGTH(VV_MI_CADENA));
 END;
- // 
+ 
 
 
 
