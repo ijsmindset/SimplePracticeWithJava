@@ -11,7 +11,7 @@ public class Fibonacci{  // is basic code only display terminal bash  declare de
             if(i < 9){
                 System.out.print(a + ", ");
             } else {
-                System.out.print(a + "... continua la serie de Fibonacci"); //
+                System.out.print(a + "... continua la serie de Fibonacci"); 
             }
         
             c = a + b;
