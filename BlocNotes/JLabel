@@ -28,4 +28,4 @@ public class FormTwo extends JFrame{
         formOne.setVisible(true);
         formOne.setLocationRelativeTo(null);
     }
-} //
+} 
