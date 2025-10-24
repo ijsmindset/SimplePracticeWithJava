@@ -17,7 +17,7 @@ public class Calculadora{ //
         System.out.println("Dame el primer valor para realizar la operacion: ");
             numUno = in.nextInt();
 
-        System.out.println("Dame el segundo valor para realizar la operacion: ");        
+        System.out.println("Dame el segundo valor para realizar la operacion: ");        //
             numDos = in.nextInt();
 
         switch(signo){
