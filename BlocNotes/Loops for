@@ -32,3 +32,4 @@ sea mayor que 10 se corta el bucle entonces  sumaria 11 volveria a pasar por el 
 es 11 menor o igual que 10? como es false se corta el bucle y no se guarda ese 11 y la siguiente accion es imprimir el programa
 le concatenamo i + ", " para que se vea bien con una coma y un espacio 12345678910 a 1, 2, 3, 4, ....
 */ 
+//
