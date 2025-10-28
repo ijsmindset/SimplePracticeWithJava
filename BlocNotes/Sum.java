@@ -1,4 +1,4 @@
-public class Suma{
+//public class Suma{
   public static void main(String args[]){
 
    int num_uno   = 3;  
@@ -10,5 +10,5 @@ public class Suma{
  }
 } 
 
-
+//
 
