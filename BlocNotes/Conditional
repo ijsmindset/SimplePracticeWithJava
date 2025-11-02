@@ -23,3 +23,4 @@ de los simbolos de suma resta etc... asi como los parentesis. en la variable pro
 la media de las asignaturas (sumamo las tres y el resultado se divide por el numero de asignaturas)
  mas abajo usamos la condicional 'if' si esta aprobado (true) imprimira en pantalla el texto de aprobado mas la nota
 por el contrario si es no(false) 'else' imprimiremos en pantalla la salida con el texto de suspenso mas la nota*/
+//
