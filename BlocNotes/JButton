@@ -27,3 +27,4 @@ public class Boton extends JFrame implements ActionListener{
         boton1.setLocationRelativeTo(null); // layout interfaze of button
     }
 }
+//
