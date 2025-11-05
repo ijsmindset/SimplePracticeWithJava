@@ -34,7 +34,7 @@ This Java program allows the user to create a dynamic array of integers. The use
 - Use of `for` loops to traverse arrays.
 - Practice basic Java concepts such as data types, arrays and control structures.
 - Correct closing of resources (`Scanner`).
-
+  ///
 ## Operation
 
 1. The program prompts the user for the number of numbers to enter.
