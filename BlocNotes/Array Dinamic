@@ -61,4 +61,4 @@ Este programa Java permite al usuario crear una matriz dinámica de números ent
 1. El programa solicita al usuario el número de números a introducir.
 2. Se crea un array de esa longitud.
 3. Se recorre el array pidiendo al usuario que introduzca cada valor.
-4. El contenido completo del array se imprime en pantalla */
+4. El contenido completo del array se imprime en pantalla */ //
