@@ -28,5 +28,5 @@ public class Equals {
         System.out.println("Program ended.");
         in.close();
     }
-}
+} //
 
